@@ -1,0 +1,96 @@
+.top_globo {
+    height: 80px;
+    width: 88px;
+    margin-left: 6px;
+    background-color: #f0ad4e;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 20px 30px;
+    border-bottom-left-radius: 20px 30px;
+}
+.bottom_globo {
+    width: 0;
+    height: 0;
+    border-top: 60px solid #f0ad4e;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+#globos {
+    position: absolute;
+    bottom: 350px;
+}
+.globo {
+    position: absolute;
+}
+#globo_1 {
+    left: 200px;
+    animation: anim_globo_up 7s infinite;
+    & > div {
+        animation: anim_globo_side 4s infinite;
+    }
+    .cuerda {
+        animation: anim_globo_side_let_one 4s infinite;
+        span {
+            -ms-transform: rotate(-15deg);
+            -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+            height: 189px;
+            margin-left: 75px;
+            margin-top: -5px;
+            animation: anim_globo_up_let_one 7s infinite;
+        }
+    }
+}
+#globo_2 {
+    left: 300px;
+    animation: anim_globo_up 6s infinite;
+    & > div {
+        animation: anim_globo_side 9s alternate infinite;
+    }
+    .top_globo {
+        background-color: red;
+    }
+    .bottom_globo {
+        border-top-color: red;
+    }
+    .cuerda {
+        animation: anim_globo_side_let_two 9s alternate infinite;
+        span {
+            -ms-transform: rotate(15deg);
+            -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+            height: 189px;
+            margin-left: 25px;
+            margin-top: -5px;
+        }
+    }
+}
+#globo_3 {
+    left: 250px;
+    margin-top: -10px;
+    animation: anim_globo_up 3s infinite;
+    & > div {
+        animation: anim_globo_side_three 5s infinite alternate;
+    }
+    .top_globo {
+        background: #9cc8e6;
+    }
+    .bottom_globo {
+        border-top-color: #9cc8e6;
+    }
+    .cuerda {
+        animation: anim_globo_side_let_three 5s infinite alternate;
+    }
+}
+.cuerda {
+    span {
+        position: absolute;
+        height: 191px;
+        width: 0px;
+        margin-left: 50px;
+        border-left: 1px solid black;
+        top: 129px;
+    }
+}

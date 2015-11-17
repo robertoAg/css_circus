@@ -1,0 +1,103 @@
+
+header{
+	position: relative;
+	width: 50%;
+	margin: 30px auto;
+	h1{
+		padding-bottom: 30px;
+		text-align: center;
+		font-family: 'Hustlers';
+		font-size: 7em;
+		letter-spacing: 5px;
+		border: 10px double red;
+		border-top-left-radius: 30px 20px;
+		border-bottom-right-radius: 20px 30px;
+		background-color: black;
+		color: white;
+	}
+	span.deco-head{
+	    width: 0; 
+	    height: 0; 
+	    position: absolute;
+		margin-top: -10px;
+		margin-left: 5px;
+	    border-bottom: 10px solid red;
+	    border-left: 4px solid transparent;
+	    border-right: 20px solid transparent;
+	}
+	span.dh-top{
+		top: 0;
+	    animation: anim-border-top-deco 4s infinite;
+	}
+	span.dh-top:before{
+		content:"";
+		top: 0;
+		margin-top: -7px;
+		margin-left: -6px;
+	    border-bottom: 20px solid red;
+	    border-left: 9px solid transparent;
+	    border-right: 10px solid transparent;
+	    position: absolute;
+	    animation: anim-border-top-decoB 4s infinite;
+	}
+	span.dh-top:after{
+	content:"";
+	top: 0;
+	margin-top: -10px;
+	margin-left: -1px;
+    border-top: 20px solid red;
+    border-right: 7px solid red;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    animation: anim-border-top-decoA 4s infinite;
+	}	
+	span.dh-right{
+	right: -20px;
+	-webkit-transform: rotate(90deg);
+	   -moz-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	     -o-transform: rotate(90deg);
+	        transform: rotate(90deg);
+    animation: anim-border-right-deco 4s infinite;
+	}
+}
+header span.dh-top:nth-of-type(1){
+	left: 10%;
+}
+header span.dh-top:nth-of-type(2){
+	left: 20%;
+}
+header span.dh-top:nth-of-type(3){
+	left: 30%;
+}
+header span.dh-top:nth-of-type(4){
+	left: 40%;
+}
+header span.dh-top:nth-of-type(5){
+	left: 50%;
+}
+header span.dh-top:nth-of-type(6){
+	left: 60%;
+}
+header span.dh-top:nth-of-type(7){
+	left: 70%;
+}
+header span.dh-top:nth-of-type(8){
+	left: 80%;
+}
+header span.dh-top:nth-of-type(9){
+	left: 90%;
+}
+header .dh-right:nth-of-type(10){
+	top: 20%;
+}
+header .dh-right:nth-of-type(11){
+	top: 40%;
+}
+header .dh-right:nth-of-type(12){
+	top: 60%;
+}
+header .dh-right:nth-of-type(13){
+	top: 80%;
+}
